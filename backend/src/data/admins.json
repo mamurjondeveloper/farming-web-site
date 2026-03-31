@@ -1,0 +1,8 @@
+[
+  {
+    "id": "admin-id-v1",
+    "username": "admin",
+    "passwordHash": "$2b$10$sYESQr6QPPoEh6C.zI/n1OtxUxndvbv8HF.0.vpdoQnsXYeEzDS/y",
+    "role": "superadmin"
+  }
+]

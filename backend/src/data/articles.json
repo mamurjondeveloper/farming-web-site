@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "title": "Bug'doy yetishtirish innovatsiyalari 2026",
+    "summary": "Joriy yilda O'zbekistonda bug'doy yetishtirishda kutilayotgan asosiy texnologik va agrotexnik o'zgarishlar.",
+    "content": "Bug'doy yetishtirish jarayonida 2026-yilda asosan tomchilatib sug'orish texnologiyalariga urg'u beriladi. Yozgi mavsumda havo haroratining ko'tarilishi munosabati bilan olimlar yangi, issiqqa chidamli va suvni kam talab qiladigan navlarni taklif etishmoqda. Shuningdek, tuproq tahlili jarayonini avtomatlashtirish...",
+    "category": "Agrotexnika",
+    "coverImage": "",
+    "tags": ["bug'doy", "innovatsiya", "sug'orish"],
+    "viewsCount": 1450,
+    "createdAt": "2026-03-20T10:00:00.000Z",
+    "updatedAt": "2026-03-21T12:00:00.000Z",
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "id": "2",
+    "title": "Chorvachilik fermalarini raqamlashtirish",
+    "summary": "Fermerlar endi chorva mollarining sog'lig'i, ozuqasi va mahsuldorligini mobil ilovalar orqali monitoring qila oladi.",
+    "content": "Chorvachilik sohasida monitoring tizimlari ommalashmoqda. Sigirlarning bo'yniga taqiladigan sensorlar har daqiqadagi harakat va oziqlanishini hisoblab, to'g'ridan-to'g'ri bulutli tizimga uzatadi. Ushbu ma'lumotlar veterinarlar va fermerlar uchun ehtimoliy kasalliklarning oldini olishga juda katta yordam bermoqda...",
+    "category": "Chorvachilik",
+    "coverImage": "",
+    "tags": ["chorva", "raqamli iqtisodiyot", "datchiklar"],
+    "viewsCount": 895,
+    "createdAt": "2026-03-22T08:30:00.000Z",
+    "updatedAt": "2026-03-22T08:30:00.000Z",
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "id": "3",
+    "title": "Sabzavotlar eksporti: Yevropa sifat standartlari",
+    "summary": "O'zbek pomidor va bodringlari Yevropa ittifoqi bozorlariga kirishi uchun qanday talablarga javob berishi kerak?",
+    "content": "Evropa standartlari, ya'ni GlobalG.A.P tizimi talablari juda qat'iy. Eng avvalo tuproqning ximiyeaviy tarkibi va qo'llanilgan pestitsidlar miqdori labaratoriyalarda sinchiklab o'rganiladi. Shu bilan birga, issiqxonalar atrofidagi sanitariya-gigiyena qoidalari ham eng yuqori darajada ta'minlanishi shart bo'ldi...",
+    "category": "Bozor va Tahlil",
+    "coverImage": "",
+    "tags": ["pomidor", "eksport", "standart"],
+    "viewsCount": 2100,
+    "createdAt": "2026-03-25T14:15:00.000Z",
+    "updatedAt": "2026-03-25T14:15:00.000Z",
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "id": "4",
+    "title": "Bog'dorchilikda kasalliklarga qarshi kurash",
+    "summary": "Mevali daraxtlarda ko'p uchraydigan zamburug' va zararkunandalarga o'z vaqtida chora ko'rish mavsum hosilini saqlab qoladi.",
+    "content": "Erta bahorda, kurtaklar uyg'onishi bilan daraxtlarga zararkunandalar ham hujum qila boshlaydi. Biz bugun olma va nok daraxtlarida uchraydigan kalmaraza kasalligiga qarshi kurash bo'yicha agro-tavsiyalar beramiz. Asosiy e'tiborni bordo suyuqligi kabi ishonchli vositalar va ularni qo'llashdagi to'g'ri proporsiyalarga qaratishimiz darkor...",
+    "category": "Bog'dorchilik",
+    "coverImage": "",
+    "tags": ["olma", "kasallik", "dorilash"],
+    "viewsCount": 1120,
+    "createdAt": "2026-03-26T09:00:00.000Z",
+    "updatedAt": "2026-03-26T09:00:00.000Z",
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  }
+]
