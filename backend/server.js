@@ -8,6 +8,7 @@ const { initDB } = require("./src/config/db");
 const authRoutes = require("./src/routes/authRoutes");
 const articleRoutes = require("./src/routes/articleRoutes");
 const priceRoutes = require("./src/routes/priceRoutes");
+const tickerRoutes = require("./src/routes/tickerRoutes");
 const uploadRoutes = require("./src/routes/uploadRoutes");
 
 // .env fayldagi sozlamalarni yuklab olamiz
@@ -32,6 +33,7 @@ app.get("/api/health", (_req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/articles", articleRoutes);
 app.use("/api/prices", priceRoutes);
+app.use("/api/ticker", tickerRoutes);
 app.use("/api/upload", uploadRoutes);
 
 // Noma'lum marshrutlar uchun javob

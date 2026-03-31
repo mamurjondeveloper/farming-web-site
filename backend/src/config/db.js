@@ -49,6 +49,7 @@ const initDB = async () => {
       CREATE TABLE IF NOT EXISTS admins (
         id TEXT PRIMARY KEY,
         username TEXT UNIQUE NOT NULL,
+        email TEXT UNIQUE,
         passwordHash TEXT NOT NULL,
         role TEXT DEFAULT 'editor'
       )
@@ -89,6 +90,31 @@ const initDB = async () => {
         updatedAt TEXT,
         createdBy TEXT,
         updatedBy TEXT
+      )
+    `);
+
+    // 4. Ticker Items Table (Trading Style)
+    await runQuery(`
+      CREATE TABLE IF NOT EXISTS ticker_items (
+        id TEXT PRIMARY KEY,
+        productName TEXT NOT NULL,
+        isVisible INTEGER DEFAULT 1,
+        orderIndex INTEGER DEFAULT 0,
+        createdAt TEXT,
+        createdBy TEXT
+      )
+    `);
+
+    // 5. Ticker History Table (Trading Pricing Points - Single Price)
+    await runQuery(`
+      CREATE TABLE IF NOT EXISTS ticker_history (
+        id TEXT PRIMARY KEY,
+        tickerItemId TEXT NOT NULL,
+        price INTEGER NOT NULL,
+        currency TEXT DEFAULT 'UZS',
+        createdAt TEXT,
+        createdBy TEXT,
+        FOREIGN KEY (tickerItemId) REFERENCES ticker_items(id) ON DELETE CASCADE
       )
     `);
 

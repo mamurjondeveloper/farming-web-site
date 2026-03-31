@@ -65,10 +65,17 @@ function AdminDashboard() {
           </div>
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:border-blue-300 transition-colors">
-          <h3 className="text-lg font-bold text-slate-700">Narxlar</h3>
+          <h3 className="text-lg font-bold text-slate-700">Narxlar (Hududiy)</h3>
           <p className="mt-2 text-sm text-slate-500">Bozorlardagi mahsulot narxlarini qo'shish, o'chirish va yangilash formasi.</p>
           <div className="mt-4 pt-4 border-t border-slate-100 flex gap-2">
             <button onClick={() => navigate("/admin/prices")} className="w-full text-sm font-semibold text-white bg-blue-600 rounded-lg px-3 py-2 hover:bg-blue-700 transition">Boshqarish</button>
+          </div>
+        </div>
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:border-emerald-300 transition-colors">
+          <h3 className="text-lg font-bold text-slate-700">O'rtacha Narxlar (Ticker)</h3>
+          <p className="mt-2 text-sm text-slate-500">Saytning sahifalari tepasida chiqib turuvchi o'rtacha narxlarni tahrirlash.</p>
+          <div className="mt-4 pt-4 border-t border-slate-100 flex gap-2">
+            <button onClick={() => navigate("/admin/ticker")} className="w-full text-sm font-semibold text-white bg-emerald-600 rounded-lg px-3 py-2 hover:bg-emerald-700 transition">Boshqarish</button>
           </div>
         </div>
       </div>
