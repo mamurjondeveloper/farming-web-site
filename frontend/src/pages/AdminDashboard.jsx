@@ -78,6 +78,13 @@ function AdminDashboard() {
             <button onClick={() => navigate("/admin/ticker")} className="w-full text-sm font-semibold text-white bg-emerald-600 rounded-lg px-3 py-2 hover:bg-emerald-700 transition">Boshqarish</button>
           </div>
         </div>
+        <div className="rounded-2xl border border-indigo-200 bg-white p-6 shadow-sm hover:border-indigo-400 transition-colors bg-gradient-to-br from-indigo-50/50">
+          <h3 className="text-lg font-bold text-indigo-900">Bildirishnomalar</h3>
+          <p className="mt-2 text-sm text-slate-500">Tizimdagi muhim xabarlarni kuzatish, foydalanuvchilarga yangi bildirishnoma yaratish.</p>
+          <div className="mt-4 pt-4 border-t border-slate-100 flex gap-2">
+            <button onClick={() => navigate("/admin/notifications")} className="w-full text-sm font-semibold text-white bg-indigo-600 rounded-lg px-3 py-2 hover:bg-indigo-700 transition shadow">Boshqarish</button>
+          </div>
+        </div>
       </div>
       
       {/* For registering new admins */}

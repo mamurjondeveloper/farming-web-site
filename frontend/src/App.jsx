@@ -12,6 +12,7 @@ import AdminRegister from "./pages/AdminRegister";
 import AdminArticles from "./pages/AdminArticles";
 import AdminPrices from "./pages/AdminPrices";
 import AdminTicker from "./pages/AdminTicker";
+import AdminNotifications from "./pages/AdminNotifications";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -37,6 +38,7 @@ function App() {
           <Route path="/admin/articles" element={<AdminArticles />} />
           <Route path="/admin/prices" element={<AdminPrices />} />
           <Route path="/admin/ticker" element={<AdminTicker />} />
+          <Route path="/admin/notifications" element={<AdminNotifications />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

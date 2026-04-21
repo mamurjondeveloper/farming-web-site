@@ -1,6 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import { useAuth } from "../context/AuthContext";
 
 function navClassName({ isActive }) {
   return isActive
@@ -12,22 +13,12 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const { language, changeLanguage, t } = useLanguage();
+  const { adminUser, logout } = useAuth();
   const navigate = useNavigate();
   const profileRef = useRef();
 
-  const [adminUser, setAdminUser] = useState(null);
-
-  useEffect(() => {
-    const userStr = localStorage.getItem("adminUser");
-    if (userStr) {
-      try { setAdminUser(JSON.parse(userStr)); } catch(e) {}
-    }
-  }, []);
-
   const handleLogout = () => {
-    localStorage.removeItem("adminToken");
-    localStorage.removeItem("adminUser");
-    setAdminUser(null);
+    logout();
     setProfileOpen(false);
     navigate("/login");
   };

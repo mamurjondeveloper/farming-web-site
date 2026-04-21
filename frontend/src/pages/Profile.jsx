@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axios";
+import { useAuth } from "../context/AuthContext";
 
 function Profile() {
   const navigate = useNavigate();
+  const { logout } = useAuth();
   const [adminUser, setAdminUser] = useState(null);
   
   const [username, setUsername] = useState("");
@@ -66,8 +68,7 @@ function Profile() {
   };
 
   const handleLogout = () => {
-     localStorage.removeItem("adminToken");
-     localStorage.removeItem("adminUser");
+     logout();
      navigate("/");
   };
 

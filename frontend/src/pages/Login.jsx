@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import api from "../api/axios";
+import { useAuth } from "../context/AuthContext";
 
 function Login() {
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   
@@ -20,8 +22,7 @@ function Login() {
       const res = await api.post("/api/auth/login", { username, password });
       
       if (res.data.success && res.data.token) {
-        localStorage.setItem("adminToken", res.data.token);
-        localStorage.setItem("adminUser", JSON.stringify(res.data.admin));
+        login(res.data.admin, res.data.token);
         navigate("/profile");
       }
     } catch (err) {
